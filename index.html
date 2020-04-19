@@ -1,5 +1,369 @@
+<!DOCTYPE html>
+<html>
+<title>Welcome to Game Development - by tituszban</title>
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 <body>
-    <h1>
-        Hello world!
-    </h1>
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="sidebar">
+  <h1 class="w3-xxxlarge w3-text-theme">On this page</h1>
+  <button class="w3-bar-item w3-button" onclick="close_navigation()">Close <i class="fa fa-remove"></i></button>
+  <a href="#about" onclick="close_navigation()" class="w3-bar-item w3-button">About</a>
+  <a href="#getting-started" onclick="close_navigation()" class="w3-bar-item w3-button">Getting started</a>
+  <a href="#resources" onclick="close_navigation()" class="w3-bar-item w3-button">Resources</a>
+  <a href="#games" onclick="close_navigation()" class="w3-bar-item w3-button">Games</a>
+  <!-- <a href="#" onclick="close_navigation()" class="w3-bar-item w3-button">Blog</a> -->
+  <a href="#license" onclick="close_navigation()" class="w3-bar-item w3-button">License</a>
+</nav>
+
+<!-- Header -->
+<header class="w3-container w3-theme w3-padding" id="header">
+  <i onclick="open_navigation()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
+  <div class="w3-center">
+  <h1 class="w3-xxxlarge w3-animate-bottom">Welcome to Game Development</h1>
+  <h4 class="w3-margin-bottom">by tituszban</h4>
+  </div>
+</header>
+
+<div class="w3-row-padding w3-center w3-margin-top">
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>This page has...</h3><br>
+  <i class="fa fa-gamepad w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+  <p>Some info about why I'm writing this</p>
+  <p>Usefull resources to get started</p>
+  <p>Open source projects</p>
+  <p>Some thoughts on some games I've worked on</p>
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>This page hopes you're interested in...</h3><br>
+  <i class="fa fa-users w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+  <p>Games and gaming</p>
+  <p>Computers and programming</p>
+  <p>Creating something new</p>
+  <p>Learning something along the way</p>
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>This pages assumes you...</h3><br>
+  <i class="fa fa-code w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+  <p>Have some knowledge of gaming, common genres, etc</p>
+  <p>Have a basic understanding of programming, ideally C#</p>
+  <p>Want to buid games</p>
+  </div>
+</div>
+</div>
+
+<div class="w3-container">
+<hr>     
+<div id="about" class="w3-center">
+  <h2>About me</h2>
+  <p>Who am I and why have I made this</p>
+</div>   
+
+<header class="w3-container w3-grey">
+  <h2>My past in game development</h2>
+</header>
+
+<div class="w3-padding w3-white w3-display-container">
+  <p>
+      I've been programming for close to 10 years now, and it all started with games. Well, no. That's not entirely accurate. It all started with Lego and robots, 
+      But what opened my horizont, and what made me never stop is games.
+  </p>
+  <p>
+      I was 14 when through some weird connections I've found out that I could actually make games.
+      Sure, I always knew there must be a way to make them, I just never thought that <b>I</b> could make one.
+  </p>
+  <p>
+      At this point my knowledge of programming was basic at best.
+      I knew some things, and read most of a book (some of which made some sense), but making games is how I learnt a good chucnk of what I know today of programming.
+  </p>
+  <p>
+      Games are such a fascinating medium. It's the perfect mix of creative arts, design and engineering.
+      It's a world where with very little knowledge someone can build great things, but where there is no limit to the things you feel you need to learn.
+      Even if making games is not what you are going to do your entire life (like myself), you will have solved fundamental problems and have tackled challenges of all sizes, which you will be able to use in the rest of your career.
+  </p>
+  <p>
+      Long story short, I've spent quite a few years making games under the brand of RedCubeGames. It was the games "company" that wasn't more than just an alternate name for me making games. But it sounded good, so I used it.
+  </p>
+  <p>
+      I've made games big and small, some projects lasting for a few hours, some lasting many months. Here I'd like to share with you some of it, for you to learn from it and for me to reminisce.
+  </p>
+  
+</div>
+
+<header class="w3-container w3-grey">
+    <h2>Why write this now?</h2>
+</header>
+
+<div class="w3-padding w3-white w3-display-container">
+    <p>
+        When you're reading this COVID-19 might be a long gone memory of the past, or the singular event that shapes life.
+    </p>
+    <p>
+        The current reality is that this virus has forced everyone to stay at home, which means that a lot of students suddenly need something to do from home.
+    </p>
+    <p>
+        This is the reason the <a href="http://www.c3.hu/" target="_blank">C3 Foundation</a> the organisers of the <a href="https://verseny.c3.hu/" target="_blank"><19 Freestyle Computer compatition</a> 
+        approached me to write something about the game I've entered into their competition many years ago, which turned into this general resource for game development.
+    </p>
+</div>
+
+<header class="w3-container w3-grey">
+    <h2>Where am I now?</h2>
+</header>
+
+<div class="w3-padding w3-white w3-display-container">
+    <p>
+        In case you were curious, since making these games I've got myself a degree in Robotics Engineering and now working as a Software Engineer,
+        but from time to time, I still make games, mostly as game jams, or helping out in other peoples projects.
+    </p>
+    <p>
+        While I stopped working on games every day, it's not something that I could ever leave behind, so who knows, one day I might get back into it again, for more than just a few weeks.
+    </p>
+    <p>
+        If you'd like to get in touch, ask questions or just chat about your projects, I recommend using <a href="https://www.linkedin.com/in/tituszban/" target="_blank">LinkedIn</a>.
+    </p>
+</div>
+
+<hr>     
+<div id="getting-started" class="w3-center">
+  <h2>Getting started</h2>
+  <p>Some advice on where to start, and how to build your first few games</p>
+</div>   
+
+<header class="w3-container w3-grey">
+  <h2>Your first projects</h2>
+</header>
+
+<div class="w3-padding w3-white w3-display-container">
+  <p>
+      So you want to start making games. Excellent! Fair warnings: your first few games won't be as impressive as you want them to be.
+      But you'll be proud of them, and that is what's important here.
+      You'll have a lot of learning ahead of you, but you need to get started somewhere.
+  </p>  
+  <p>
+    To start making games, you'll need a game engine. While you could start from scratch and build one, it's not a smart idea, and it'll cause you a lot of pain.
+    I recommend <a href="https://unity3d.com/get-unity/download" target="_blank">Unity</a>. It's free, it's well supported, it has a fantastic community of people building things, and it supports 2D as well as 3D, on all platforms imaginable
+  </p>
+  <p>
+    Next, you'll have to start learning your tools. Look at the tutorials in the resources section, and start discovering what is possible. However, watching tutorials is not making games.
+    As soon as you have a grasp of what's going on, start creating your own games. Set yourself a goal, like making a character move, and don't stop until you get there.
+    Google is your friend, and most questions that are asked during the start of a game developers journey have already been answered on some forum.
+  </p>
+  <p>
+    Now that you're creating your first game, there are a couple decisions that need making, to have a direction of what your game will be like.
+  </p>
+  <p>
+    I know you'll want to make the next 3D puzzle adventure or cutting edge shooter. I know I did. But be sensible. Start small. Don't try to rush into a 3D game, unless you already have a good idea of 3D modelling.
+    Go 2D, and just make some pictures in your editor of choice. And try to keep your scope narrow. Realistically, you won't start making an open world action shooter, unless you have a good few years behind you.
+    Try making something, that you can Realistically finish before the heatdeath of the universe.
+  </p>
+  <p>
+    Finishing a project is more difficult than you would think. Most games are abandoned after the initial rush of excitement of a new project. That is why keeping your focus on a simple game is so crucial.
+    You can keep starting projects, but you'll learn more from actually finishing one.
+  </p>
+  <p>
+    On the other side of this coin is setting a goal and stopping there. Don't let feature creep take over. You don't need to add more mechanics to your core game. Finish your game and show it to your friends, than move on to the next idea, the next project.
+  </p>
+  <p>
+    Every time you start a new project try to learn something new. Try something you haven't done before. Genre, mechanic, theme, setting, technology, whatever it may be, you don't want to get stuck making the same game over and over again.
+  </p>
+</div>
+
+
+<hr>
+<div id="resources" class="w3-center">
+  <h2>Resources</h2>
+  <p>Some resources I've found usefull in the past for learning Unity, Game Design, Programming and places where I've found inspirations for ideas</p>
+</div>
+</div>
+<div class="w3-row-padding">
+
+<div class="">
+<div class="w3-card white">
+  <div class="w3-container w3-theme">
+    <h3>Unity tutorials</h3>
+  </div>
+  <ul class="w3-ul w3-border-top">
+    <li>
+      <h3><a href="https://learn.unity.com/" target="_blank">Official Unity tutorials</a></h3>
+      <p>While this wasn't always the case, right now, the official Unity tutorials are absolutely brilliant. From beginner to expert, thay have videos and written articles about anything that their engine is capable of.</p>
+    </li>
+    <li>
+      <h3><a href="https://www.youtube.com/user/quill18creates/" target="_blank">Quill18Creates</a></h3>
+      <p>This is how I got into game development. Some of his videos might be slightly outdated, but he as full game projects with every step along the way to get there. While I don't recommend just following along his videos, I recommend watching them, and learning from them for your own projects</p>
+    </li>
+    <li>
+        <h3><a href="https://www.youtube.com/channel/UCmtyQOKKmrMVaKuRXz02jbQ" target="_blank">Sebastian Lague</a></h3>
+        <p>His Coding Adventures series is genuinely one of the most impressing set of videos I've seen on this topic. Yes, some of them are quite advanced, but he presents them in a simple, easy to understand manner, and everything he does is free to download</p>
+    </li>
+  </ul>
+  <div class="w3-container w3-theme">
+    <h3>Development resources</h3>
+  </div>
+  <ul class="w3-ul w3-border-top">
+    <li>
+      <h3><a href="https://www.textures.com/" target="_blank">textures.com</a></h3>
+      <p>If you decide to go on the 3D route, you'll need textures unless you're a big fan of flat colours. Well, textures.com has quite a few of them. By which I mean literarly thousands. And you get free credits every day to download texture quality photos.</p>
+    </li>
+    <li>
+      <h3><a href="https://incompetech.com/" target="_blank">Incompetech</a></h3>
+      <p>Kevin MacLeod's Incompetech might be the most frequently use source of free music on the internet. If you've spent more than 5 seconds online, you've probably heard one of his songs playing in the background. It's really all free, just try picking one that wasn't used by nineteen thousand different YouTubers already.</p>
+    </li>
+    <li>
+      <h3><a href="https://www.getpaint.net/" target="_blank">Paint.NET</a></h3>
+      <p>Onto development tools. Paint.NET is my prefered Photoshop alternative, with has all the features you might need but it's simple enought that you don't need a new pair of eyes after opening it.</p>
+    </li>
+    <li>
+      <h3><a href="https://www.autodesk.co.uk/products/3ds-max/overview" target="_blank">3DS MAX</a></h3>
+      <p>Again, if you choose to go 3D, you'll need some sort of 3D modelling program. You can use Blender, but 3DS MAX is the superior tool, and it's free for students. Just for the love of god don't use it as a CAD software for engineering projects like I did. It's a terrible idea.</p>
+    </li>
+  </ul>
+  <div class="w3-container w3-theme">
+    <h3>Get inspired</h3>
+  </div>
+  <ul class="w3-ul w3-border-top">
+    <li>
+      <h3><a href="https://www.youtube.com/channel/UC0JB7TSe49lg56u6qH8y_MQ" target="_blank">Game Developers Conference</a></h3>
+        <p>GDC features dozens of amazing talks from all your favorite games studios talking about their games, challenges they overcome and fantastic retrospective postmortems.</p>
+        <p>While they are not directly applicable for getting started in game development, some talks are way too dry for a beginner to understand, they are fascinating looks into how the big boys do it.</p>
+    </li>
+    <li>
+      <h3><a href="https://www.youtube.com/playlist?list=PLAbMhAYRuCUibhDtVUn3WJnHojS2uSNPD" target="_blank">Yahtzee's Dev Diary</a></h3>
+      <p>Yahtzee Croshaw game developer, writer, reviewer extraordineer's series on creating a game every month. He talk a lot about what makes a good game, code ideas of Game Design, primary and secondary gameplay loops and various challenges of game development.</p>
+    </li>
+    <li>
+      <h3><a href="https://ldjam.com/" target="_blank">Ludum Dare</a></h3>
+      <p>
+        Creativity flurishes under constraints. GameJams are a perfect example of this. You have 72 hours (or 48 if you're really hardcore) and a theme to build a game. Any game.
+        That's it. No time for feature creep or pondering approaches. It's just you and your team and a simple idea to be turned into a prototype. Some of my best memories of game development comes from doing a Jam with friends.
+      </p>
+    </li>
+  </ul>
+</div>
+</div>
+</div>
+
+
+<hr>
+<div id="games" class="w3-center">
+    <h2>Games</h2>
+    <p>Some games</p>
+  </div>   
+<div class="w3-border">
+<div class="w3-bar w3-theme">
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openGame(event,'Game1')">Rect</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openGame(event,'Game2')">Elevator</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openGame(event,'Game3')">Altair</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openGame(event,'Game4')">Artificial</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openGame(event,'Game5')">Lasers</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openGame(event,'Game6')">Powervoid</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openGame(event,'Game7')">Over the Threshold</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openGame(event,'Game8')">Rabble Party</button>
+</div>
+
+<div id="Game1" class="w3-container game w3-animate-opacity">
+  <h2>Rect</h2>
+  <p></p>
+  <div class="slideshow w3-content" style="max-width:800px;position:relative">
+
+  <img class="slide w3-animate-opacity" src="content\Rectv2.png" style="width:100%">
+
+  <a class="slideshow-button plus w3-button w3-hover-dark-grey" style="position:absolute;top:45%;left:0;">❮</a>
+  <a class="slideshow-button minus w3-button w3-hover-dark-grey" style="position:absolute;top:45%;right:0;">❯</a>
+  </div>
+</div>
+
+<div id="Game2" class="w3-container game w3-animate-opacity">
+  <h2>Elevator</h2>
+  <p></p>
+  <div class="slideshow w3-content" style="max-width:800px;position:relative">
+
+    <img class="slide w3-animate-opacity" src="content\ElevatorTitle.png" style="width:100%">
+  
+    <a class="slideshow-button plus w3-button w3-hover-dark-grey" style="position:absolute;top:45%;left:0;">❮</a>
+    <a class="slideshow-button minus w3-button w3-hover-dark-grey" style="position:absolute;top:45%;right:0;">❯</a>
+  </div>
+</div>
+
+<div id="Game3" class="w3-container game w3-animate-opacity">
+  <h2>Altair</h2>
+  <p></p>
+</div>
+<div id="Game4" class="w3-container game w3-animate-opacity">
+  <h2>Artificial</h2>
+  <p></p>
+</div>
+<div id="Game5" class="w3-container game w3-animate-opacity">
+  <h2>Lasers</h2>
+  <p></p>
+</div>
+
+<div id="Game6" class="w3-container game w3-animate-opacity">
+  <h2>Powervoid</h2>
+  <p></p>
+</div>
+
+<div id="Game7" class="w3-container game w3-animate-opacity">
+  <h2>Over the Threshold</h2>
+  <p></p>
+</div>
+
+<div id="Game8" class="w3-container game w3-animate-opacity">
+  <h2>Rabble Party</h2>
+  <p></p>
+</div>
+</div>
+
+<hr>     
+<div id="license" class="w3-center">
+  <h2>License</h2>
+</div>   
+
+<header class="w3-container w3-grey">
+  <h2>What can I do with the projects here?</h2>
+</header>
+
+<div class="w3-padding w3-white w3-display-container">
+  <h3>Can I publish these games under my name?</h3>
+  <p>No.</p>
+  <h3>Can I use parts of these in my own original games?</h3>
+  <p>Yes</p>
+  <h3>Can I use any of the assets (sounds, images, story writing, etc) in my own projects?</h3>
+  <p>No. A lot of the assets here I have not made myself so I cannot let you just use them.</p>
+  <h3>Can I run the projects, try them, learn from them?</h3>
+  <p>Yes, that's the point.</p>
+</div>
+
+<br>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark w3-padding-16">
+  <h3>Welcome to Game development</h3>
+  <p>My website <a href="http://www.tituszban.com" target="_blank">tituszban.com</a></p>
+  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
+    <a class="w3-text-white" href="#header"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+  <p>© Content copyright 2020 Titusz Ban - All Rights Reserved</p>
+  <p>Template from <a href="https://www.w3schools.com">w3schools.com</a></p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
+</html>

@@ -1,0 +1,5 @@
+.image-background {
+    background-image: url("rcg-banner.png");
+    background-position: top;
+    background-size: cover;
+}
