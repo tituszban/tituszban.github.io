@@ -3,3 +3,9 @@
     background-position: top;
     background-size: cover;
 }
+
+.spoiler{
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}

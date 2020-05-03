@@ -265,8 +265,8 @@
   </div>   
 <div class="w3-border">
 <div class="w3-bar w3-theme">
-  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openGame(event,'Game1')">Rect</button>
-  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openGame(event,'Game2')">Elevator</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openGame(event,'Rect')">Rect</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openGame(event,'Elevator')">Elevator</button>
   <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openGame(event,'Game3')">Altair</button>
   <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openGame(event,'Game4')">Artificial</button>
   <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openGame(event,'Game5')">Lasers</button>
@@ -275,10 +275,13 @@
   <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openGame(event,'Game8')">Rabble Party</button>
 </div>
 
-<div id="Game1" class="w3-container game w3-animate-opacity">
+<div id="Rect" class="w3-container game w3-animate-opacity">
   <div class="slideshow w3-content" style="max-width:800px;position:relative">
     <img class="slide w3-animate-opacity" src="content\Rectv2.png" style="width:100%">
     <img class="slide w3-animate-opacity" src="content\Rectv1.png" style="width:100%">
+    <img class="slide w3-animate-opacity" src="content\Rect_Screenshot1.png" style="width:100%">
+    <img class="slide w3-animate-opacity" src="content\Rect_Screenshot2.png" style="width:100%">
+    <img class="slide w3-animate-opacity" src="content\Rect_Screenshot3.png" style="width:100%">
     <a class="slideshow-button plus w3-button w3-hover-dark-grey" style="position:absolute;top:45%;left:0;">❮</a>
     <a class="slideshow-button minus w3-button w3-hover-dark-grey" style="position:absolute;top:45%;right:0;">❯</a>
   </div>
@@ -298,8 +301,8 @@
   </p>
   <iframe width="560" height="180" src="https://www.indiedb.com/games/rect/downloads/rect-win/widget" frameborder="0" style="w3-container"></iframe><br><a href="https://www.indiedb.com/games/rect/downloads/rect-win">Download Rect (Win) - Indie DB</a>
   <p>
-    Now in terms of actually loading it, I have some bad news. Given that it was 6 years ago, the Unity UI Engine and networking Engine that this was using was fully depricated.
-    If you're feeling brave, you can dowload an older version of Unity from the <a href="https://unity3d.com/get-unity/download/archive" target="_blank">Unity Archive</a>. I recommend something around 4.6.x.
+    Now in terms of actually loading it in Unity, I have some bad news. Given that it was 6 years ago, the Unity UI Engine and networking Engine that this was using was fully depricated.
+    If you're feeling brave, you can dowload an older version of Unity from the <a href="https://unity3d.com/get-unity/download/archive" target="_blank">Unity Archive</a>. I used 4.6.6, so you should use that or above.
     In terms of source code, <a href="https://drive.google.com/drive/folders/104nvp7u6GudikAnZ_QEhx6dZo9gfAE89?usp=sharing" target="_blank">here you go</a>. Don't expect to see best practices. As I look back, I cringe at all the horrible solutions, but that's what 6 years of extra experience gives you I guess.
   </p>
   <p>
@@ -310,18 +313,94 @@
     <li>Sometime a core gameplay loop is enough. Not always, but sometimes. This game doesn't really have depth. Yes there are game modes, and levels and sillyness, but this game can be boiled down to a solid 2 minute gameplay loop, that you play with some friends.</li>
     <li>For this style of game, fun should be your only metric. When doing any change, ask yourself, does it allow me to have more fun. If yes, do it. This is not an excuse not to make a competent game, a buggy mess is no fun, but there is no point in polishing and adding depth, to a game where the point is the chaos and being angry at your friend who took the powerup from you again!</li>
   </ul>
+  <p>
+    What you should try with the source code:
+  </p>
+  <ul>
+    <li>Add more powerups! New weapons, new poweres, but also think evil powerups that would hinder the player for picking it up accidentally</li>
+    <li>Add more levels! See what you can design given the high speed and chaos of the game. Be careful not to have maps that slow down the gameplay</li>
+    <li>See how you can change the AI. Once you understand how it works in the first place, see if you can make it more aggressive, more tactical, etc</li>
+  </ul>
+  <p>You're welcome to show me what you made out of it. Email me on tituszban@gmail.com, or message me on <a href="https://www.linkedin.com/in/tituszban/" target="_blank">LinkedIn</a>.</p>
 </div>
 
-<div id="Game2" class="w3-container game w3-animate-opacity">
-  <h2>Elevator</h2>
-  <p></p>
+<div id="Elevator" class="w3-container game w3-animate-opacity">
   <div class="slideshow w3-content" style="max-width:800px;position:relative">
-
     <img class="slide w3-animate-opacity" src="content\ElevatorTitle.png" style="width:100%">
-  
+    <img class="slide w3-animate-opacity" src="content\Elevator_screenshot2.png" style="width:100%">
+    <img class="slide w3-animate-opacity" src="content\Elevator_screenshot3.png" style="width:100%">
+    <img class="slide w3-animate-opacity" src="content\Elevator_screenshot4.png" style="width:100%">
+    <img class="slide w3-animate-opacity" src="content\Elevator_screenshot5.png" style="width:100%">  
     <a class="slideshow-button plus w3-button w3-hover-dark-grey" style="position:absolute;top:45%;left:0;">❮</a>
     <a class="slideshow-button minus w3-button w3-hover-dark-grey" style="position:absolute;top:45%;right:0;">❯</a>
   </div>
+  <p>Elevator is a mobile game where you controll elevators to deliver players to their floors, published May 2014</p>
+  
+  <p>
+    One day at some mall I was waiting for someone and watched this pair of elevators going up and down. This was around the time I started seeing the algorithms behind everyday things. I started wondering what was the logic behind the how the next floor is selected, and how it would change, if the algorithm knew ahead of time exactly how many people will board, and which floors they were going to. That was about the time I realsied that this sounds pretty fun, and I should make a game out of this. So I did.
+  </p>
+  <p>
+    This was the typical side project, that got out of hand. After that first burst of inspiration I started working on this to take a break from my big project at the time (Altair). Yes, I took breaks from game development, with more game development. After an initial proof of concept, where people wanted to go to floors, got in to the elevator, and got out on the right floor, and you could tell the elevator to go to floors I felt like I was onto something.
+  </p>
+  <p>
+    There were a couple difficult things during the prototype. Difficulties that face a novice developer, but to this day I remember the satisfaction of solving these problems. 
+    Generating random people, getting the elevator to snap to floors correctly, but the one that I remember the most, was a simple yet annoying issue: 
+    Once the elevator arrives on a floor, each person starts moving towards a random position inside the elevator. If the elevator leaves before reaching that position they go back to where they started (so you can't prepare people near the door, but leave them there). However, if they were inside the elevator car, but not yet at their desired position, and the elevator leaves the floor, they ran out of the moving elevator. This was clearly wrong, but the solution, obvious it may be for the reader and for me now, was quite difficult. 
+    I did find the right way, checking before turning back, if already inside the elevator, and continuing if so, but also setting the elevator as the parent early, so the person isn't left behind.
+  </p>
+  <p>
+    After having completed the prototype, and realising that I have a solid primary gameplay loop, I started focusing on secondary parts of the game. I came up with objectives, calibrated people's speed and how quickly they start to get angry and leave.
+    This was also around the time I came up with powerups. You may sense a theme in my early games, I love(d) powerups! They added a sufficient amount of extra exictement, however, thinking back some of them should have been permanent, as certain levels are just impossible without activating some right at the beginning.
+    <a class="spoiler" spoiler="Also, you should almost always buy a couple $+ powerups. As long as enough people come, it just makes you more money.">Spoilers if you actually want to play the game.</a> (If you're interested, you could try and fix these issues. Try downloading the game, and see what happens if you modify the people and the powerups.)
+  </p>
+  <p>
+    This was followed by the thirtiary loop, setting up levels, creating different backgrounds, multiple elevators, persisiting money, etc. And right there, in a couple months, you have a pretty solid game. What's next?
+  </p>
+  <p>
+    The first game I actually published! As it turns out, publishing a game to Android is cheap and easy. Like really cheap. At the time of writing it's $25.
+    Which is not nothing, but also negligable compared to some other platforms. That is $25 as a one of, not per game. If you're serious about game development, and intend to publish games onto android, it's 100% worth the cost.
+  </p>
+  <p>
+    I definitely thought it was worth the cost. Porting over to Android was not easy, but Unity makes it as simple as it could be. And there it was. Out in the world, my first published game. I couldn't wait to tell the everyone I knew. Some did download it, which as it turns out is really helpful, as that initial interest the Play Store interprets as it being a relevant game, and it goes ahead and recommends it in the store.
+  </p>
+  <p>
+    Throughout its life it had quite a bit of success at least by my standards. At its peak it had a couple thousand people download it from all over the world. And ratings! Oh, the ratings, yes the first few were my friends. Obviously. But as time passed, I started getting random people rating it!
+    Yes, some people didn't like it, or didn't understand it, which always happend, but on the whole it got positive ratings, and I was happy! A couple years ago it was pulled due to some play store changes that I didn't update the game for. I missed the emails, and it was far in my rearview mirror.
+    But you know what, I went back, fixed the Play Store listing, and you can go and download it from here. Yes, you'll get a warning, that it's for an old Android version, but it still mostly works.
+  </p>
+  <a href='https://play.google.com/store/apps/details?id=com.RedCubeGames.Elevator&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img style="width:300px;" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+  <p>
+    So what about other platforms, IOS more specifically? Well, to publish on IOS you have to pay $99 a year as a store fee. Which while makes sense for professional developers, it's a bit steep for a hobbist such as myself. Also, you have to have some Apple computer and even a Mac Mini will set you back $799 which I'd rather spend on anything else.
+    You may decide that it's worth if for you, but it wasn't for me.
+  </p>
+  <p>
+    This too, is an older game, so you'll have to grab an older version of Unity from the <a href="https://unity3d.com/get-unity/download/archive" target="_blank">Unity Archive</a>. For this too, I've used 4.6.6, and it worked just fine.
+    You can download the <a href="https://drive.google.com/drive/folders/1lbyEzBWRHT8vzjr4IpxK7Gd7uqZPnLhF?usp=sharing" target="_blank">full source from here</a>
+  </p>
+  <p>
+    Key takeaways:
+  </p>
+  <ul>
+    <li>Publish your games. It's very easy once you finish, to close the project, smile at a job well done and move on to the next project. But publishing games is easier than it ever was, on platforms like Android and Itch.io. Try putting what you do out there. But do so, once what you have is actually any good. There is way too much shovelware on these free platforms. You need some good qualities to stand out.</li>
+    <li>Take your hobby project, and run with it. This has seen way more success, than the main game that I've actually worked on during this time. Why? This was a better game. It had a solid primary loop, with well designed secondary and thirtiary loops.</li>
+    <li>Inspiration can come anywhere. Let your mind wonder on every day things. Let it see the game in everything. Almost everything can be turned into a game!</li>
+  </ul>
+  <p>
+    What you should try with the source code:
+  </p>
+  <ul>
+    <li>Try messing around with the powerups. See how you can change the balance of the game by modifying how powerfull these are</li>
+    <li>Try chaning the ballance of people. What happend if they're faster/slower? What happens if they get angry earlier?</li>
+    <li>See if you can add new level mechanics, besides more floors or elevators. Elevators on two sides?</li>
+    <li>One weakness of this game is it's looks. Charming it may be, it looked old fashioned even in 2014. Can you re-texture it? Make it look actually good?</li>
+  </ul>
+  <p>You're welcome to show me what you made out of it. Email me on tituszban@gmail.com, or message me on <a href="https://www.linkedin.com/in/tituszban/" target="_blank">LinkedIn</a>.</p>
+  <p>
+    <b>A note on monetisation:</b> as you may see, there are no ads, no microtransactions in this game.
+    Not to say I didn't consider or even experiment with avenues of monetisation, but at the end, I decided that it wasn't right for this game.
+    This was a passion project, but as such, I want to be able to move on once I'm finished. I was much happier with a great pure experience, than something cluttered with ads.
+    You may chose to monetise your games. And yes, something that you've worked hard on is a great feeling, but keep in mind, why you're making games.
+  </p>
 </div>
 
 <div id="Game3" class="w3-container game w3-animate-opacity">

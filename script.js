@@ -27,8 +27,6 @@ function openGame(evt, gameName) {
   }
 }
 
-openGame(null, "Game1");
-
 var mybtn = document.getElementsByClassName("testbtn")[0];
 mybtn.click();
 
@@ -81,4 +79,11 @@ $(document).ready(() => {
             }
         }
     }
+
+    $(".spoiler").click(function() {
+      $(this).text($(this).attr("spoiler"));
+      $(this).removeClass("spoiler");
+    });
 });
+
+openGame(null, "Elevator");
