@@ -43,7 +43,7 @@ function myAccFunc(id) {
 $(document).ready(() => {
     console.log("Ready");
     $("a.slideshow-button").click(function() {
-        var increment = $(this).hasClass('plus') ? 1 : -1;
+        var increment = $(this).hasClass('plus') ? -1 : 1;
         var $imgs = $(this).siblings("img");
         
         var enabled = 0;
@@ -86,4 +86,4 @@ $(document).ready(() => {
     });
 });
 
-openGame(null, "Elevator");
+openGame(null, "Artificial");
