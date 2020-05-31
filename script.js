@@ -86,4 +86,4 @@ $(document).ready(() => {
     });
 });
 
-openGame(null, "Artificial");
+openGame(null, "Rect");
