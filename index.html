@@ -24,11 +24,11 @@
 </nav>
 
 <!-- Header -->
-<header class="w3-container w3-theme w3-padding" id="header">
+<header class="w3-container w3-theme w3-padding" id="header" style="height:200px">
   <i onclick="open_navigation()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
   <div class="w3-center">
-  <h1 class="w3-xxxlarge w3-animate-bottom">Welcome to Game Development</h1>
-  <h4 class="w3-margin-bottom">by tituszban</h4>
+    <h1 class="w3-xxxlarge w3-animate-bottom">Welcome to Game Development</h1>
+    <h4 class="w3-margin-bottom">by tituszban</h4>
   </div>
 </header>
 
@@ -80,7 +80,7 @@
 <div class="w3-padding w3-white w3-display-container">
   <p>
       I've been programming for close to 10 years now, and it all started with games. Well, no. That's not entirely accurate. It all started with Lego and robots, 
-      But what opened my horizont, and what made me never stop is games.
+      But what opened my horizont, and what made me never want to stop is games.
   </p>
   <p>
       I was 14 when through some weird connections I've found out that I could actually make games.
@@ -269,8 +269,8 @@
   <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openGame(event,'Elevator')">Elevator</button>
   <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openGame(event,'Altair')">Altair</button>
   <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openGame(event,'Artificial')">Artificial</button>
-  <!-- <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openGame(event,'Game5')">Lasers</button>
-  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openGame(event,'Game6')">Powervoid</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openGame(event,'Lasers')">Lasers</button>
+  <!-- <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openGame(event,'Game6')">Powervoid</button>
   <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openGame(event,'Game7')">Over the Threshold</button>
   <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openGame(event,'Game8')">Rabble Party</button> -->
 </div>
@@ -513,7 +513,7 @@
     Lastly, the biggest mistake of all, which is somewhat related to it being too hard, was that two of the games were not really necessary. Nothing happens, if you don't save the people as the ambulance, and you can just hide in the corner from the cars, so Natalie can be ignored. And poor Glen, while he wants to provide support, if the player has no time, they can't use him to help the others.
     I think there should have been more significant gaps, where the player have time to fix up the other games with Glen.
   </p>
-  <p>As always, <a href="https://drive.google.com/open?id=1VE2ySVTegiMyjWtz9ZEnU7Q8qa_fl9_k" target="_blank">get the full source code</a> and an older version of Unity (4.6.6) from the <a href="https://unity3d.com/get-unity/download/archive" target="_blank">Unity Archive</a> to see this project for yourself.</p>
+  <p>As always, <a href="https://drive.google.com/drive/folders/1VE2ySVTegiMyjWtz9ZEnU7Q8qa_fl9_k?usp=sharing" target="_blank">get the full source code</a> and an older version of Unity (4.6.6) from the <a href="https://unity3d.com/get-unity/download/archive" target="_blank">Unity Archive</a> to see this project for yourself.</p>
   <p>
     So what are the key takeaways from all this?
   </p>
@@ -542,11 +542,99 @@
   </ul>
   <p>You're welcome to show me what you made out of it or any of your game jam games. Email me on tituszban@gmail.com, or message me on <a href="https://www.linkedin.com/in/tituszban/" target="_blank">LinkedIn</a>.</p>
 </div>
-<!-- <div id="Game5" class="w3-container game w3-animate-opacity">
-  <h2>Lasers</h2>
-  <p></p>
+<div id="Lasers" class="w3-container game w3-animate-opacity">
+  <div class="slideshow w3-content" style="max-width:800px;position:relative">
+    <img class="slide w3-animate-opacity" src="content\Lasers_Title.png" style="width:100%">
+    <img class="slide w3-animate-opacity" src="content\Lasers_Combined_01.png" style="width:100%">
+    <img class="slide w3-animate-opacity" src="content\Lasers_Combined_02.png" style="width:100%">
+    <img class="slide w3-animate-opacity" src="content\Lasers_Combined_03.png" style="width:100%">
+    <img class="slide w3-animate-opacity" src="content\Lasers_Combined_04.png" style="width:100%">
+    <img class="slide w3-animate-opacity" src="content\Lasers_Combined_05.png" style="width:100%">
+    <img class="slide w3-animate-opacity" src="content\Lasers_Combined_06.png" style="width:100%">
+    <img class="slide w3-animate-opacity" src="content\Lasers_Combined_07.png" style="width:100%">
+    <a class="slideshow-button plus w3-button w3-hover-dark-grey" style="position:absolute;top:45%;left:0;">❮</a>
+    <a class="slideshow-button minus w3-button w3-hover-dark-grey" style="position:absolute;top:45%;right:0;">❯</a>
+  </div>
+  <p>
+    Lasers is a puzzle game I've worked on in 2015.
+  </p>
+  <p>
+    Lasers was really a passion project of mine. For a long time, I had this obsession with seeing lasers bounce back from a reflective surfice at a perfect angle.
+    So with a couple games in the can, I wanted to make one, where you get to play around with bouncing lasers all over the place.
+    I also wanted to make a puzzle game and I wanted to make another mobile game. So, the concept of Lasers was born.
+  </p>
+  <p>
+    You may see many similarities in art style to my other games, where I was doing the art. Flat primary colours, simple shapes and names that tell you exactly what to expect from the game.
+    Art was never my strong side, but with these at least got me a point where the game was stylish, even if not pretty.
+  </p>
+  <p>
+    As puzzle games go, especially level based and for mobile, the steps in development are fairly straight forward.
+  </p>
+  <ol>
+    <li>Come up with a core mechanic. In this case it was lasers reflecing from surfaces, going from an emitter to a target.</li>
+    <li>Create a set of levels using this core mechanic, starting at the very simple to the more complex.</li>
+    <li>Introduce new conecpts and mechanics (obstacles, multi colour lasers, black holes, portals, splitters, etc)</li>
+    <li>Create a set of levels using just this mechanic, to let the player have an intuitive sense to it.</li>
+    <li>Create a set of levels that use a combination of previous mechanics in combination</li>
+    <li>Repeat from step 3.</li>
+  </ol>
+  <p>
+    Working on puzzle games are always tricky. Because what you think you'll be doing is coming up new mechanics, which is the fun and enjoyable part.
+    What you really be working on most of the time, is designing levels. Which is a lot more difficult. For each new mechanic you introduce, you should probably have at least 5-10 new levels.
+    So you can see, you will spend most of your time on levels. And designing puzzle levels are very difficult.
+    It's a balancing act between difficulty, ranging from the trivial to the impossible and satisfaction, creating puzzles that feels good to solve.
+    My recommendation, is before you decide to do a puzzle game of your own, master level design in other puzzle games.
+    There are numerous that have level editors and community sharing. Practice making levels in those games and share it with friends and the community.
+    Once you are skilled at creating compelling levels, then you should start thinking about creating your own mechanics.
+  </p>
+  <p>
+    Alongside the puzzling aspects there were a couple other parts I was working on. I was trying to do some sort of story. Why? I don't really know.
+    What I ended up with was a weird, existential storry line, where the tutorial text starts to gain consciousness and tries to figure out the meaning of it's existance. It all lead up to the introduction of the level editor.
+    Yes, there was going to be a level editor, and community map sharing. How? I don't think I've figured that out, other than encoding the levels in a strange sort of encoding of my own. I haven't discovered JSON or XML at that point.
+    Looking back what was quite strange, is that even tho there is a level editor, the actual maps of the game didn't use it. It was an afterthouth, after having handrolled most of the map on various levels.
+    Also there was going to be proper mobile integration with achievements, leaderboards and so on. And I was trying to do monetisation. Yes, you may see references in the game for calculating where ads shouls go, and a strange approach to having adds you can turn off where if you do the game tries to shame the player. That was a silly idea.
+  </p>
+  <p>
+    However, as I was adding more and more side features, I lost sight of what was important, which is is creating a compelling puzzle game. And that's what killed this project at the end of the day.
+    A lot of the later levels, turned into pixel hunting. Trying to find the one right layout to solve the level. I made a mistake, that's so common to bad puzzle games, where the difficulty of the level isn't coming up with the solution, but actually executing it.
+    It didn't help, that I kept introducing mechanics that amplified minor movements (such as the black hole and the splitters) while precision was already the issue on earlier levels.
+    In hignsight the solution was probably to make the cubes rotate on discrete angles, to eliminate this issue, but that would've required a complete rework of all of the levels.
+  </p>
+  <p>
+    I didn't end up publishing Lasers. I am happy, that I've worked on this idea, but there is so much I which I've done differently. Here are some of the takeaways from this project:
+  </p>
+  <ul>
+    <li>
+      Prepare to do a lot of level design, if you want to do a puzzle game.
+    </li>
+    <li>
+      Focus on perfecting the core gameplay and build your set of levels before adding more and more features. Avoid feature creep.
+    </li>
+    <li>
+      If you want a level editor, use it for your actual levels. It will make you perfect the editor as you try to build more and more complex levels, which will allow your users to also build more and more levels.
+    </li>
+    <li>
+      If you want to do community sharing, you better have at least a basic idea, of how you'll want to do it. Learn how servers work, and how to use some sort of cloud provider.
+    </li>
+    <li>
+      Be able to identify is a game isn't working. Try to fix it if you can, abandon if if you can't. Don't keep building onto it blindly, hoping it'll all work out. It won't.
+    </li>
+    <li>
+      If you have a passion, obession, something keep thinking about while your brain idles, make a game out of it!
+    </li>
+  </ul>
+  <p>
+    <a href="https://drive.google.com/drive/folders/1T67xT9CS4xnCm--mL5wK7mxYTqIcrt5m?usp=sharing" target="_blank">Get the full source code</a> and an older version of Unity (4.6.6) from the <a href="https://unity3d.com/get-unity/download/archive" target="_blank">Unity Archive</a> to see this project for yourself.
+    It's important to note, which took me a bit to figure out as well. If you want to start from the menu, and play the full game, not just individual levels, you have to start with the <i>Startup</i> scene, not the <i>Menu</i> scene. It creates some important GameObjects that I didn't bother to instantiate in the menu if they're missing. Something you could try to fix! Other things you can try:
+  </p>
+  <ul>
+    <li>See if making cubes rotate on discrete angles would make it work, and see how many levels it would break</li>
+    <li>Try this as practice for creating levels. With the lack of proper community sharing you can't really give it to others to try, but it does provide a unique set of mechanics to play around with</li>
+    <li>See if you can come up with more mechanics that make the game compelling</li>
+  </ul>
+  <p>You're welcome to show me what you made out of it or any of your game jam games. Email me on tituszban@gmail.com, or message me on <a href="https://www.linkedin.com/in/tituszban/" target="_blank">LinkedIn</a>.</p>
 </div>
-
+<!--
 <div id="Game6" class="w3-container game w3-animate-opacity">
   <h2>Powervoid</h2>
   <p></p>
@@ -590,7 +678,7 @@
 <!-- Footer -->
 <footer class="w3-container w3-theme-dark w3-padding-16">
   <h3>Welcome to Game development</h3>
-  <p>My website <a href="http://www.tituszban.com" target="_blank">tituszban.com</a></p>
+  <p>My website: <a href="http://www.tituszban.com" target="_blank">tituszban.com</a></p>
   <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
     <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
     <a class="w3-text-white" href="#header"><span class="w3-xlarge">

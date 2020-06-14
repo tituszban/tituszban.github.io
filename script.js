@@ -86,4 +86,4 @@ $(document).ready(() => {
     });
 });
 
-openGame(null, "Rect");
+openGame(null, "Lasers");
